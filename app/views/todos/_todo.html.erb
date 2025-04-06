@@ -1,0 +1,15 @@
+<%= turbo_frame_tag todo do %>
+  <div id="<%= dom_id todo %>">
+    <p>
+      <%= link_to todo.action, todo_path(todo),
+        data: { turbo_frame: "_top" }
+      %>
+
+      <div class="todo_actions">
+        <%= button_to "Delete", todo_path(todo), method: :delete %>
+        <%= link_to "Edit", edit_todo_path(todo) %>
+      </div>
+    </p>
+  </div>
+<hr>
+<% end %>
