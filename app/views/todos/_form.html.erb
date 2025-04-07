@@ -13,11 +13,13 @@
 
   <div>
     <%= form.label :action, style: "display: block" %>
+      <div class="p-2">
     <%= form.text_field :action %>
+    </div>
   </div>
 
   <div>
-    <%= link_to "Cancel", todos_path %>
-    <%= form.submit %>
+    <%= link_to "Cancel", todos_path, class: "btn btn-warning" %>
+    <%= form.submit "Add todo", class: "btn btn-secondary" %>
   </div>
 <% end %>
