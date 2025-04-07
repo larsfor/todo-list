@@ -5,5 +5,5 @@ The create, edit, show and delete actions where mostly setup using the following
 
 ## Current TODOs on the todo-list
 - [ ] Fix the "Show" action, such that the todo that's being shown isn't a link
-- [ ] Add some flavour to the CSS, for example bootstrap
+- [x] Add some flavour to the CSS, for example bootstrap
 - [ ] Add some features other than just the todo action, such as budget, due date, comments
