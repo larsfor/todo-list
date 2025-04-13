@@ -19,6 +19,13 @@
   </div>
 
   <div>
+    <%= form.label :description, style: "display: block" %>
+      <div class="p-2">
+    <%= form.text_area :description %>
+    </div>
+  </div>
+
+  <div>
     <%= link_to "Cancel", todos_path, class: "btn btn-warning" %>
     <%= form.submit "Add todo", class: "btn btn-secondary" %>
   </div>
